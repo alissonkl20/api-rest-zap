@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+
+# Docker
+**/docker-compose.override.yml
+**/docker-compose.override.yaml
+
+# Volumes and data
+data/
+volumes/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Ignore evolution and postgres volumes
+evolution_store/
+evolution_instances/
+postgres_data/
