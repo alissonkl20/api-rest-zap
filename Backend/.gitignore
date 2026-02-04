@@ -1,16 +1,9 @@
-# Ignore environment files
+# Ignorar arquivos de configuração e variáveis de ambiente
 .env
 
-# Ignore node_modules folder
+# Ignorar dependências do Node.js
 node_modules/
 
-# Ignore system files
+# Ignorar outros arquivos ou diretórios desnecessários
 .DS_Store
 Thumbs.db
-
-# Ignore log files
-*.log
-
-# Ignore build artifacts
-dist/
-build/
