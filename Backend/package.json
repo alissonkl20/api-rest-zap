@@ -1,29 +1,31 @@
 {
-  "name": "baileys-automation",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "dist/server.js",
+  "description": "WhatsApp Automation API",
+  "main": "dist/whatsapp.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node dist/whatsapp.js",
+    "dev": "ts-node src/whatsapp.ts",
     "build": "tsc",
-    "dev": "ts-node-dev src/server.ts"
+    "postinstall": "npm run build"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@whiskeysockets/baileys": "^7.0.0-rc.9",
-    "add": "^2.0.6",
-    "axios": "^1.13.4",
-    "baileys": "^7.0.0-rc.9",
-    "cors": "^2.8.6",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "pino": "^10.3.0",
-    "qrcode": "^1.5.4",
+    "express": "^4.18.2",
+    "whatsapp-web.js": "^1.23.0",
     "qrcode-terminal": "^0.12.0",
-    "sharp": "^0.34.5"
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/ws": "^8.18.1",
-    "ts-node-dev": "^2.0.0"
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6",
+    "ts-node": "^10.9.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }

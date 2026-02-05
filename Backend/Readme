@@ -1,0 +1,35 @@
+# WhatsApp Automation API
+
+## Plataformas de Deploy Gratuito
+
+### 1. Railway (Recomendado)
+1. Acesse [railway.app](https://railway.app)
+2. Faça login com GitHub
+3. Clique em "New Project" → "Deploy from GitHub repo"
+4. Selecione este repositório
+5. Railway detectará automaticamente o [`railway.json`](railway.json)
+
+### 2. Render
+1. Acesse [render.com](https://render.com)
+2. Faça login com GitHub
+3. Clique em "New Web Service"
+4. Selecione este repositório
+5. Render detectará o [`render.yaml`](render.yaml)
+
+### 3. Fly.io
+```sh
+npm install -g flyctl
+flyctl auth login
+flyctl launch
+flyctl deploy
+```
+
+## Variáveis de Ambiente
+
+Configure no painel da plataforma:
+- `PORT`: 3000 (auto-configurado)
+- `NODE_ENV`: production
+
+## Observações
+
+⚠️ **Importante**: WhatsApp Web pode desconectar após inatividade em ambientes serverless. Recomendo usar Railway ou Render com planos que mantêm a aplicação sempre ativa.

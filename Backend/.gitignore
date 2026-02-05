@@ -1,9 +1,20 @@
-# Ignorar arquivos de configuração e variáveis de ambiente
+# Ocultar pastas de autenticação e cache
+.wwebjs_auth/
+.wwebjs_cache/
+auth/
+auth_info_baileys/
+
+# Ocultar arquivos de configuração sensíveis
 .env
 
-# Ignorar dependências do Node.js
+# Ocultar dependências instaladas
 node_modules/
 
-# Ignorar outros arquivos ou diretórios desnecessários
+# Ocultar arquivos de build
+dist/
+
+# Ocultar arquivos de log
+*.log
+
+# Ocultar arquivos do sistema operacional
 .DS_Store
-Thumbs.db
