@@ -1,35 +1,46 @@
 # WhatsApp Automation API
 
-## Plataformas de Deploy Gratuito
+## 🌐 Plataformas de Deploy Gratuito
 
 ### 1. Railway (Recomendado)
-1. Acesse [railway.app](https://railway.app)
-2. Faça login com GitHub
-3. Clique em "New Project" → "Deploy from GitHub repo"
-4. Selecione este repositório
-5. Railway detectará automaticamente o [`railway.json`](railway.json)
+1. Acesse [railway.app](https://railway.app).
+2. Faça login com sua conta do GitHub.
+3. Clique em **New Project** → **Deploy from GitHub repo**.
+4. Selecione este repositório.
+5. O Railway detectará automaticamente o arquivo [`railway.json`](railway.json).
 
 ### 2. Render
-1. Acesse [render.com](https://render.com)
-2. Faça login com GitHub
-3. Clique em "New Web Service"
-4. Selecione este repositório
-5. Render detectará o [`render.yaml`](render.yaml)
+1. Acesse [render.com](https://render.com).
+2. Faça login com sua conta do GitHub.
+3. Clique em **New Web Service**.
+4. Selecione este repositório.
+5. O Render detectará automaticamente o arquivo [`render.yaml`](render.yaml).
 
 ### 3. Fly.io
-```sh
-npm install -g flyctl
-flyctl auth login
-flyctl launch
-flyctl deploy
-```
+1. Instale o Fly CLI:
+   ```sh
+   npm install -g flyctl
+   ```
+2. Faça login no Fly.io:
+   ```sh
+   flyctl auth login
+   ```
+3. Inicie o projeto:
+   ```sh
+   flyctl launch
+   ```
+4. Faça o deploy:
+   ```sh
+   flyctl deploy
+   ```
 
-## Variáveis de Ambiente
+## ⚙️ Variáveis de Ambiente
 
-Configure no painel da plataforma:
-- `PORT`: 3000 (auto-configurado)
-- `NODE_ENV`: production
+Configure as seguintes variáveis no painel da plataforma escolhida:
+- `PORT`: 3000 (auto-configurado).
+- `NODE_ENV`: production.
 
-## Observações
+## ⚠️ Observações Importantes
 
-⚠️ **Importante**: WhatsApp Web pode desconectar após inatividade em ambientes serverless. Recomendo usar Railway ou Render com planos que mantêm a aplicação sempre ativa.
+- O **WhatsApp Web** pode desconectar após períodos de inatividade em ambientes serverless.
+- Recomenda-se usar **Railway** ou **Render** com planos que mantêm a aplicação sempre ativa.
